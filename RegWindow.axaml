@@ -1,0 +1,69 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Market.RegWindow"
+        Title="OOO Спортивные товары "
+        Width="500"
+        Height="650"
+        Icon="avares://Market/Assets/icon.png"
+        WindowStartupLocation="CenterScreen"
+        MinHeight="650" 
+        MaxHeight="650" 
+        MinWidth="500" 
+        MaxWidth="500">
+
+    <Window.Styles>
+        <Style Selector="Button">
+            
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+        <Style Selector="TextBlock">
+            
+        </Style>
+        <Style Selector="TextBox">
+            <Setter Property="CornerRadius" Value="5"/>
+            <Setter Property="Width" Value="400"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+           
+        </Style>
+    </Window.Styles>
+
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Margin="20,0,0,0">
+            <TextBlock FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Text="Регистрация" FontSize="56" HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Фамилия"/>
+            <TextBox FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Margin="0,5,0,11" x:Name="UserSurnameBox"/>
+
+            <TextBlock Text="Имя"/>
+            <TextBox FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Margin="0,5,0,11" x:Name="UserNameBox"/>
+
+            <TextBlock Text="Отчество"/>
+            <TextBox FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Margin="0,5,0,11" x:Name="UserPatronymicBox"/>
+
+            <TextBlock Text="Почта"/>
+            <TextBox FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Margin="0,5,0,11" x:Name="UserLoginBox"/>
+
+            <TextBlock Text="Пароль"/>
+            <TextBox FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Margin="0,5,0,11" x:Name="UserPasswordBox" PasswordChar="*"/>
+
+            <TextBlock FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Text="Повторите пароль"/>
+            
+                <TextBox FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" x:Name="UserConfirmPasswordBox" Margin="0,5,0,11" PasswordChar="*"/>
+                
+           
+
+            <Button FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" x:Name="RegistrationBtn"
+                    HorizontalAlignment="Center" 
+                    HorizontalContentAlignment = "Center"
+                    Width="200" 
+                    Height="50" 
+                    Background="#76E383" 
+                    Foreground="White"
+                    Content="Зарегистрироваться"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,18 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Market.MBoxExitAsc"
+        Title="OOO Спортивные товары "
+        Width="500"
+        Height="650"
+        Icon="avares://Market/Assets/icon.png"
+        WindowStartupLocation="CenterScreen"
+        MinHeight="250" 
+        MaxHeight="250" 
+        MinWidth="250" 
+        MaxWidth="250">
+        <Grid VerticalAlignment="Center" HorizontalAlignment="Center"> 
+            <Button FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Content="Выйти" x:Name="ExitBtn" Foreground="White" Background="#76E383" Width="100" Height="66" VerticalContentAlignment="Center"/>
+        </Grid>
+
+
+        </Window>

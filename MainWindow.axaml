@@ -1,0 +1,65 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Market"
+        Icon="avares://Market/Assets/icon.png"
+        x:Class="Market.MainWindow" Title="OOO Спортивные товары ">
+    <Grid Margin="30,0,30,30" >
+        
+        <TextBlock FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" x:Name="FullUserName"
+         PointerPressed = "fullUserNameTextBox_Pressed"
+         HorizontalAlignment="Right" 
+         Margin="0,10,10,10"
+         />
+        
+         <StackPanel Orientation="Vertical" Margin="0,35,0,0">
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                        <ComboBox FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Width="165" Height="30" x:Name="CBoxCategory" PlaceholderText="Все категории" SelectionChanged="CBoxCategory_SelectionChanged"/>
+                        <TextBox FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS"  Width="500" Margin="10,0,10,0" Height="30"  x:Name="SearchTextBox" TextChanged="SearchTextBox_TextChanged" />
+                        <Button FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" x:Name="StoreBtn" Click="ButtonStorage_Click" Margin="0,0,30,0" Width="100" Height="30" Content="Корзина" HorizontalContentAlignment="Center"/>
+                 </StackPanel >
+                        
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Margin="20,10,0,20">
+                        <TextBlock FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Text="По производителю" VerticalAlignment="Center" />
+                        <ComboBox FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Width="190" Margin="25,0, 25,0" x:Name="CBoxMaker" PlaceholderText="Все производители" SelectionChanged="CBoxMaker_SelectionChanged"/>
+
+                        <TextBlock FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Text="По цене" VerticalAlignment="Center"/>
+                        <ComboBox FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Width="160" Margin=" 25,0, 25,0" x:Name="CBoxPrice" PlaceholderText="По умолчанию" SelectionChanged="CBoxPrice_SelectionChanged"/>
+                        <Button FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" x:Name="AddButton" Click="AddButtin_Click" Margin=" 25,0, 25,0" Content="Добавить" Width="100" Height="30"  />
+                 </StackPanel>
+
+         </StackPanel>
+
+        
+        
+        <ScrollViewer Margin="0,120,0,0" >
+            <StackPanel>
+                <ListBox x:Name="Fff">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate x:DataType="local:Product">
+                            <StackPanel Orientation="Horizontal" Margin="5" >
+                                <Image Source="{Binding ProductPhoto}" Width="50" Height="50" Margin="5"/>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="400"/>
+                                        <ColumnDefinition Width="10*"/>  <!-- Занимает оставшееся пространство -->
+                                        <ColumnDefinition Width="200"/> <!-- Для кнопки и текста -->
+                                    </Grid.ColumnDefinitions>
+                                    <StackPanel Grid.Column="0">
+                                        <TextBlock FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Text="{Binding ProductName}" FontWeight="Bold"/>
+                                        <TextBlock FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Text="{Binding ProductDescription}"/>
+                                        <TextBlock FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Text="{Binding ProductCost, StringFormat='{}{0:C}'}"/>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+                                        <Button FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" x:Name="BtnMainFormItem" Content="+" Click="ShowArticleButton_Click" CommandParameter="{Binding}"/>
+                                        <TextBlock FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Text="{Binding ProductQuantityInStock}" Foreground="Black" Margin="5,0,0,0"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </ScrollViewer>
+        
+    </Grid>
+</Window>

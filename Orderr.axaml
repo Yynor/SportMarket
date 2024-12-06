@@ -1,0 +1,98 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Market"
+        Icon="avares://Market/Assets/icon.png"
+        x:Class="Market.Orderr" Title="OOO Спортивные товары ">
+<Grid >
+    <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10">
+        <Button FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" x:Name="ExitBtn" Click="Button_Click"  Background="#76E383" 
+            Foreground="White" Width="75" Height="30" Content="Выйти"/>
+            </Grid>
+                
+    
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Right">
+        
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/> <!-- Занимает оставшееся пространство -->
+        <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+    <TextBlock FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Grid.Row="0"  Grid.Column="0" Text = "Цена:" Margin="0,0,10,0"/>
+    
+    <TextBlock FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Grid.Row="0"  Grid.Column="1" x:Name="GeneralPrice"   Margin="5,0,30,0" Text = "0.00"/>
+    <TextBlock FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Grid.Row="1" x:Name="PickUpp"
+     Text="Выбран ближайший к вам." 
+     PointerPressed="Pressed"
+     TextWrapping="Wrap"
+     MaxWidth="200"
+     Margin="0,0,20,10"
+      />
+
+    <Button FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Grid.Row="2" x:Name="BntMakeZakaz" 
+            Content="Оформить заказ"  
+            Click="BntMakeZakaz_Click" 
+            Background="#76E383" 
+            Foreground="White"
+            Margin="0,30,30,30"
+            Width="150" Height="35" 
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"/>
+    </Grid>
+    <Grid Margin="10,50,350,20">
+             <ScrollViewer >
+            <StackPanel>
+                <ListBox Name="fff"  SelectionMode="Multiple">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate x:DataType="local:UserItemStorage">
+                            <StackPanel Orientation="Horizontal" Margin="5">
+                              <Image Source="{Binding ItemPhoto}" 
+                                    MaxWidth="150"  
+                                    MaxHeight="150" 
+                                    Margin="5" 
+                                    Stretch="Uniform" 
+                                    HorizontalAlignment="Stretch" 
+                                    VerticalAlignment="Stretch"/> 
+                                    <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="400"/>
+                                        <ColumnDefinition Width="10*"/>  <!-- Занимает оставшееся пространство -->
+                                        <ColumnDefinition Width="150"/> <!-- Для кнопки и текста -->
+                                    </Grid.ColumnDefinitions>
+                                    <StackPanel Grid.Column="0">
+                                        <TextBlock FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Text="{Binding ItemName}" FontWeight="Bold"/>
+                                        <TextBlock FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Text="{Binding ItemDescription}"/>
+                                        <TextBlock FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Text="{Binding ItemPrice, StringFormat='{}{0:C}'}"/>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+                                        
+                                        <Button FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS" Grid.Row="2" 
+                                            x:Name="RemoveSelectedButton" 
+                                            Content="Удалить выбранные" 
+                                            HorizontalAlignment="Right" 
+                                            Click="SelectButton_Click" 
+                                            Background="#76E383" 
+                                            Foreground="White"
+                                            Margin="0,10,30,30"
+                                            Width="150" Height="35" 
+                                            HorizontalContentAlignment="Center"
+                                            VerticalContentAlignment="Center"/>
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </ScrollViewer>
+        </Grid>
+
+
+    
+
+       
+    </Grid>
+</Window>
