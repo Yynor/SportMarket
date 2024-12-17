@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zPynu0eqCao=",
+  "dgSpecHash": "7/GJ9WcEQo0=",
   "success": true,
-  "projectFilePath": "/Users/new/Desktop/SportMarket/Market.csproj",
+  "projectFilePath": "/Users/new/Desktop/RRR/SportMarket/Market.csproj",
   "expectedPackageFiles": [
     "/Users/new/.nuget/packages/avalonia/11.2.1/avalonia.11.2.1.nupkg.sha512",
     "/Users/new/.nuget/packages/avalonia.angle.windows.natives/2.1.22045.20230930/avalonia.angle.windows.natives.2.1.22045.20230930.nupkg.sha512",

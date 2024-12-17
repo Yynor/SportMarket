@@ -38,7 +38,7 @@
             FontFamily = "avares://Market/Fonts/Comic Sans MS.ttf#Comic Sans MS"/>
           
      </Grid>
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,100,0,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
@@ -120,7 +120,11 @@
         
         </StackPanel>
         
-        
+        <StackPanel Grid.Row="6" x:Name="CaptchaPanel" IsVisible="False" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Image x:Name="CaptchaImage" Width="200" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox x:Name="CaptchaTextBox" Width="200" Height="25" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Button x:Name="CaptchaSubmitButton" HorizontalAlignment="Center"  Content="Подтвердить" Click="CaptchaSubmitButton_Click" />
+        </StackPanel>
                 
                 
 

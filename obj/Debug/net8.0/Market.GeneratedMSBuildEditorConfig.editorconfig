@@ -15,36 +15,36 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Market
-build_property.ProjectDir = /Users/new/Desktop/SportMarket/
+build_property.ProjectDir = /Users/new/Desktop/RRR/SportMarket/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[/Users/new/Desktop/SportMarket/AddNewItem.axaml]
+[/Users/new/Desktop/RRR/SportMarket/AddNewItem.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/new/Desktop/SportMarket/App.axaml]
+[/Users/new/Desktop/RRR/SportMarket/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/new/Desktop/SportMarket/ChangeItemWindow.axaml]
+[/Users/new/Desktop/RRR/SportMarket/ChangeItemWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/new/Desktop/SportMarket/ChoosePickupPoint.axaml]
+[/Users/new/Desktop/RRR/SportMarket/ChoosePickupPoint.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/new/Desktop/SportMarket/LoginWindow.axaml]
+[/Users/new/Desktop/RRR/SportMarket/LoginWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/new/Desktop/SportMarket/MainWindow.axaml]
+[/Users/new/Desktop/RRR/SportMarket/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/new/Desktop/SportMarket/MBoxExitAsc.axaml]
+[/Users/new/Desktop/RRR/SportMarket/MBoxExitAsc.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/new/Desktop/SportMarket/OrderConfirmWindow.axaml]
+[/Users/new/Desktop/RRR/SportMarket/OrderConfirmWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/new/Desktop/SportMarket/Orderr.axaml]
+[/Users/new/Desktop/RRR/SportMarket/Orderr.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/new/Desktop/SportMarket/RegWindow.axaml]
+[/Users/new/Desktop/RRR/SportMarket/RegWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

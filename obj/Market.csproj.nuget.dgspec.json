@@ -1,18 +1,19 @@
 {
   "format": 1,
   "restore": {
-    "/Users/new/Desktop/SportMarket/Market.csproj": {}
+    "/Users/new/Desktop/RRR/SportMarket/Market.csproj": {}
   },
   "projects": {
-    "/Users/new/Desktop/SportMarket/Market.csproj": {
+    "/Users/new/Desktop/RRR/SportMarket/Market.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/new/Desktop/SportMarket/Market.csproj",
+        "projectUniqueName": "/Users/new/Desktop/RRR/SportMarket/Market.csproj",
         "projectName": "Market",
-        "projectPath": "/Users/new/Desktop/SportMarket/Market.csproj",
+        "projectPath": "/Users/new/Desktop/RRR/SportMarket/Market.csproj",
         "packagesPath": "/Users/new/.nuget/packages/",
-        "outputPath": "/Users/new/Desktop/SportMarket/obj/",
+        "outputPath": "/Users/new/Desktop/RRR/SportMarket/obj/",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/new/.nuget/NuGet/NuGet.Config"
         ],
